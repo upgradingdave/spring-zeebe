@@ -19,6 +19,7 @@ public class OperateClientConfigurationProperties {
 
   private String clientId;
   private String clientSecret;
+  private String scope;
   private String username;
   private String password;
   private Boolean enabled = false;
@@ -47,6 +48,14 @@ public class OperateClientConfigurationProperties {
 
   public void setClientSecret(String clientSecret) {
     this.clientSecret = clientSecret;
+  }
+
+  public String getScope() {
+    return scope;
+  }
+
+  public void setScope(String scope) {
+    this.scope = scope;
   }
 
   public String getUsername() {

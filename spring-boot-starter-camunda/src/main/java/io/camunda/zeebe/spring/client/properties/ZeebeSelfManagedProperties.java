@@ -18,6 +18,9 @@ public class ZeebeSelfManagedProperties {
   @Value("${zeebe.token.audience:#{null}}")
   private String audience;
 
+  @Value("${zeebe.client.scope:#{null}}")
+  private String scope;
+
   @Value("${zeebe.client.broker.gatewayAddress:#{null}}")
   private String gatewayAddress;
 
@@ -35,6 +38,10 @@ public class ZeebeSelfManagedProperties {
 
   public String getAudience() {
     return audience;
+  }
+
+  public String getScope() {
+    return scope;
   }
 
   public String getGatewayAddress() {
